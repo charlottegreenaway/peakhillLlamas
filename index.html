@@ -1,0 +1,212 @@
+<!DOCTYPE HTML>
+<html>
+<link rel="stylesheet" href="indexcss.css">
+<header>
+	<div class="navbar">
+		<a href="#home">Home</a>
+		<div class="dropdown">
+			<button class="dropbtn">About Us
+			<i class="fa fa-caret-down"></i>
+			</button>
+			<div class="dropdown-content">
+				<a href="Aboutus.html">About Us</a>
+				<a href="ourllamas.html">Our Llamas</a>
+				<a href="aboutllamas.html">About Llamas</a>
+			</div>
+		</div>
+		<div class="dropdown">
+			<button class="dropbtn">Experiences and Booking
+			<i class="fa fa-caret-down"></i>
+			</button>
+			<div class="dropdown-content">
+				<a href="walksexp.html">Experiences</a>
+				<a href="booking.html">Booking</a>
+				<a href="vouchers.html">Vouchers Online</a>
+				<a href="education.html">Educational Visits</a>
+			</div>
+		</div>
+		<div class="dropdown">
+			<button class="dropbtn">Our Area
+			<i class="fa fa-caret-down"></i>
+			</button>
+			<div class="dropdown-content">
+				<a href="localarea.html">Local Area</a>
+				<a href="accomodation.html">Accomodation</a>
+			</div>
+		</div>
+		<div class="dropdown">
+			<button class="dropbtn">Media
+			<i class="fa fa-caret-down"></i>
+			</button>
+			<div class="dropdown-content">
+				<a href="gallery.html">Gallery</a>
+				<a href="feedback.html">Testimonials</a>
+				<a href="helplinks.html">Helpful Links</a>
+				<a href="articles.html">Articles</a>
+			</div>
+		</div>
+		<a href="contact.html">Contact</a>
+	</div>
+	
+	<div id="head">
+		<img src="PHL_logo.png" height= 250px width=250px style= "float:right" >
+		<br>
+		<br>
+		<h1><center>PEAK HILL LLAMAS</center></h1>
+		<br>
+		<br>
+	</div>
+</header>
+<body>
+	<a name="home">
+	<div id="section1">
+		<p>To escape and unwind from the hustle and bustle of modern daily life and to boost wellbeing, come and experience the benefits of what we call “Llama Therapy” - spending quality time in the company of some adorable friendly llamas in beautiful countryside!</p>
+		<p>Whether you’d just like a short Meet and Greet experience, a slightly longer activity session, gentle amble, or a full morning experience we’ll be happy to arrange your very own unique experience.</p>
+	</div>
+<div id="slides">	
+	
+	<!-- Container for the image gallery -->
+<div class="container">
+
+  <!-- Full-width images with number text -->
+  <div class="mySlides">
+    <div class="numbertext">1 / 8</div>
+      <center><img src="index_img01.jpg" style="width:35%"></center>
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 8</div>
+      <center><img src="rotating_img02.jpg" style="width:35%"></center>
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 8</div>
+      <center><img src="rotating_img03.jpg" style="width:35%"></center>
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">4 / 8</div>
+      <center><img src="rotating_img04.jpg" style="width:35%"></center>
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 8</div>
+      <center><img src="rotating_img05.jpg" style="width:35%"></center>
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">6 / 8</div>
+      <center><img src="rotating_img06.jpg" style="width:35%"></center>
+  </div>
+  <div class="mySlides">
+    <div class="numbertext">7 / 8</div>
+      <center><img src="rotating_img07.jpg" style="width:35%"></center>
+  </div>
+  <div class="mySlides">
+    <div class="numbertext">8 / 8</div>
+      <center><img src="rotating_img08.jpg" style="width:35%"></center>
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+  <!-- Image text -->
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <!-- Thumbnail images -->
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="index_img01.jpg" style="width:100%" onclick="currentSlide(1)" alt="">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="rotating_img02.jpg" style="width:100%" onclick="currentSlide(2)" alt="">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="rotating_img03.jpg" style="width:100%" onclick="currentSlide(3)" alt="">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="rotating_img04.jpg" style="width:100%" onclick="currentSlide(4)" alt="">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="rotating_img05.jpg" style="width:100%" onclick="currentSlide(5)" alt="">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="rotating_img06.jpg" style="width:100%" onclick="currentSlide(6)" alt="">
+    </div>
+	<div class="column">
+      <img class="demo cursor" src="rotating_img07.jpg" style="width:100%" onclick="currentSlide(7)" alt="">
+    </div>
+	<div class="column">
+      <img class="demo cursor" src="rotating_img08.jpg" style="width:100%" onclick="currentSlide(8)" alt="">
+    </div>
+  </div>
+</div>
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("demo");
+  let captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>	
+	
+</div>	
+<div id="section2">
+	<p>We are so lucky to be able to offer our bespoke interactive llama experiences in beautiful scenery alongside East Devon’s magnificent Jurassic Coast – England’s first natural World Heritage Site and an Area of Outstanding Natural Beauty.</p>
+	<p>We’ve been offering llama walking experiences (sometimes known as llama trekking) with our motley crew of rescued and rehomed llama boys since 2007 – and one of the main things that we and all our customers have noticed is the therapeutic and calming effect our boys seem to have on everybody who comes into contact with them.</p>
+	<p>Simply being in the presence of these gentle animals seems to calm anxiety and lift spirits, giving a real boost to feelings of wellbeing.</p>
+	<p>Llamas are particularly mindful creatures, living completely in the moment and taking in and savouring everything that is going on around them.</p>
+	<p>Our walks have always been very slow, with the llamas liking to have regular stops to munch the hedges and admire the scenery, and we have always felt that the time spent with the llamas is far more important than the actual distance we cover!</p>
+	<p>For this reason, we have now decided to move away from “trekking” and instead offer a selection of bespoke interactive experiences with our boys – spending either around 45 minutes, an hour and a half or a full morning in their company, with a choice of activities.</p>
+	<p>Our Meet and Greet experiences are for anyone who would just like to come and meet our boys, learn a little about their characters and about llamas in general, and possibly do some gentle activities such as grooming and feeding.</p>
+	<p>Our one and a half hour and full morning experiences also include a choice of light hearted and interactive activities such as llama “agility” (in the very loosest sense of the word!), clicker training (some of the llamas have been learning to identify colours and love to show off their talents!) and/or a gentle amble where the llamas will be more than happy to show off their mindfulness skills – and of course their skills at picking out their favourite hedgerow plants</p>
+	<p>. . . and for anyone wanting to know more about the joys of keeping llamas we have now introduced a two-hour husbandry experience where we look at the day-to-day practicalities of caring for these unique animals.</p>
+	<p>Whichever experience you choose you’re sure to benefit from spending some quality time with our llama therapists!</p>
+	<p>For full details and prices of each experience please see our <a href="walksexp.html">Bespoke Experiences page.</a></p>
+	<p>We endeavour to make our llamas accessible to everyone - for further information please see our <a href="https://www.walkingwithllamas.co.uk/Access%20Statement.pdf">Access Statement</a></p>
+</div>	
+	
+</body>
+
+</header>
+<footer>
+<p>This site and all its contents are subject to copyright © Peak Hill Llamas copyright date 2022</p>
+</footer>
+
+
+
+
+
+
+
+
+
+
+</html>
